@@ -1,13 +1,36 @@
 package cuentas;
-public class Main {
 
+/**
+ * Esta clase es la clase principal, genera las cuentas mediante el constructor implementado en CCuenta.
+ * Podemos operar sobre estas cuentas empleando los métodos implementados en CCuenta
+ * 
+ * 
+ * @author Josep Meziane Pastor
+ * @version 1.0
+ * @since 1.0
+ */
+
+public class Main {
+	
+	/**
+	 * Método main desde donde se ejecuta un método para operar en la cuenta.
+	 * Aquí se genera una nueva cuenta.
+	 * @param args 
+	 */
+	
+	
     public static void main(String[] args) {
-        CCuenta cuenta1;
+        CCuenta cuenta1;   //En este caso empleamos el constructor vacío.
         double saldoActual;
         float cantidad = 0f;
         operativa_cuenta(cantidad);
     }
-
+    
+    /**
+     * Método que asigna valores a la cuenta generada y nos permite modificarlos.
+     * @param saldoActual Se almacena el valor del balance de la cuenta.
+     * @param cantidad Se almacena el valor que se va a modificar al balance, sea añadiendo o sustrayendo.
+     */
 	private static void operativa_cuenta(float cantidad) {
 		CCuenta cuenta1;
 		double saldoActual;
